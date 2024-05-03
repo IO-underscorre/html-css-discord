@@ -140,8 +140,8 @@ footer > section:first-child {
 
 
 /* DEBUG DEBUG DEBUG */
-/* Everywhere */
-.container-narrow {
+
+/* .container-narrow {
     min-height: 35rem;
     background-color: violet;
     border: 2px dashed black;
@@ -152,13 +152,11 @@ footer > section:first-child {
     background-color: aquamarine;
 }
 
-/* Header */
 .sticky-header > nav > div {
     background-color: bisque;
     border: 2px dotted white;
 }
 
-/* Main */
 .column-img {
     min-height: 35rem;
     background-color: purple;
@@ -175,7 +173,6 @@ main .container-wide {
     min-height: 35rem;
 }
 
-/* Footer */
 .socials-and-lang  {
     min-height: 35rem;
     background-color: orange;
@@ -191,4 +188,4 @@ main .container-wide {
 footer nav > a {
     background-color: bisque;
     border: 2px dotted white;
-}
+} */
