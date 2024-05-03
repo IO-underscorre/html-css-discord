@@ -1,0 +1,156 @@
+/* Everywhere */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+[class^=container].container-narrow , [class^=container].container-wide {
+    margin: auto;
+    width: 95%;
+}
+
+.container-narrow {
+    max-width: 1000px;
+}
+
+.container-wide {
+    max-width: 1250px;
+}
+
+/* Header */
+header {
+    background-color: #404eed;
+}
+.sticky-header {
+    background-color: #404eed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/* Navigation bar on header */
+.sticky-header > nav {
+    min-height: 4rem;
+}
+
+.sticky-header > nav > div {
+    width: 20%;
+}
+
+/* Text link on navigation bar */
+.sticky-header > nav > ul {
+    width: 60%;
+    
+    list-style: none;
+    justify-content: center;
+}
+
+.not-sticky-header {
+    padding: 1.5rem 0;
+}
+
+/* Main */
+main > section {
+    padding: 2.5rem 0;
+}
+
+main > section:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.column-img {
+    width: 60%;
+}
+
+.column-txt {
+    width: 40%;
+}
+
+/* Footer */
+footer {
+    background-color: #23272a;
+}
+
+footer > section {
+    padding: 2.5rem 0;
+}
+
+footer > section:first-child {
+    padding-top: 1.5rem;
+}
+
+#foter-main-nav {
+    align-items: flex-start;
+}
+
+.socials-and-lang {
+    width: calc(100%/3);
+}
+
+.nav-details {
+    width: calc(100%/6);
+}
+
+
+
+/* DEBUG DEBUG DEBUG */
+/* Everywhere */
+.container-narrow {
+    min-height: 35rem;
+    background-color: violet;
+    border: 2px dashed black;
+}
+
+.container-wide {
+    border: 2px dashed black;
+    background-color: aquamarine;
+}
+
+/* Header */
+.sticky-header > nav > div {
+    background-color: bisque;
+    border: 2px dotted white;
+}
+
+/* Main */
+.column-img {
+    min-height: 35rem;
+    background-color: purple;
+    border: 2px dotted white;
+}
+
+.column-txt {
+    min-height: 35rem;
+    background-color: yellowgreen;
+    border: 2px dotted white;
+}
+
+main .container-wide {
+    min-height: 35rem;
+}
+
+/* Footer */
+.socials-and-lang  {
+    min-height: 35rem;
+    background-color: orange;
+    border: 2px dotted white;
+}
+
+.nav-details  {
+    min-height: 35rem;
+    background-color: red;
+    border: 2px dotted white;
+}
+
+footer nav > a {
+    background-color: bisque;
+    border: 2px dotted white;
+}
