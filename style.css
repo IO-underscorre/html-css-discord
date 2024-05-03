@@ -47,7 +47,7 @@ a {
 }
 
 .button-visual-stnd:hover {
-    color: #404eed;
+    color: #2a5ee8;
 }
 
 .button-visual-alt {
@@ -62,25 +62,33 @@ a {
 
 /* Header */
 header {
-    background-color: #404eed;
-}
-
-.sticky-header {
-    background-color: #404eed;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    background-image: url(images/background/jumbo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-color: #2a5ee8;
 
     color: #ffffff;
 }
 
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+    
+    font-weight: 600;
+}
+
 /* Navigation bar on top */
 .sticky-header > nav {
-    min-height: 5rem;
+    background-color: #2a5ee8;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    min-height: 4rem;
 }
 
 .sticky-header > nav > div {
-    width: 20%;
+    width: 15%;
 }
 
 /* Logo */
@@ -91,7 +99,7 @@ header {
 
 /* Central part of the navigation bar */
 .sticky-header ul {
-    width: 60%;
+    width: 68%;
     
     list-style: none;
     justify-content: center;
@@ -103,7 +111,6 @@ header {
 
 .sticky-header ul > li:hover {
     text-decoration: underline;
-    
 }
 
 /* Auth button */
@@ -112,9 +119,26 @@ header {
 }
 
 .not-sticky-header {
-    padding: 1.5rem 0;
+    padding: 7rem 0 10rem;
+    
+    text-align: center;
+    font-size: 1.5rem;
 }
 
+.not-sticky-header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.not-sticky-header p {
+    padding: 2.5rem 0;
+    line-height: 1.5;
+}
+
+.not-sticky-header a {
+    display: inline-block;
+    margin: 0 0.75rem;
+}
 
 /* Main */
 main > section {
