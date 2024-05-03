@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .container-flex {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +17,8 @@
     justify-content: space-between;
 }
 
-[class^=container].container-narrow , [class^=container].container-wide {
+/* Containers to align items inside a <section> or others macroelements horizontally */
+.container-narrow , .container-wide {
     margin: auto;
     width: 95%;
 }
@@ -53,10 +59,12 @@
     background-color: #42494e;
 }
 
+
 /* Header */
 header {
     background-color: #404eed;
 }
+
 .sticky-header {
     background-color: #404eed;
     position: -webkit-sticky;
@@ -85,6 +93,7 @@ header {
     padding: 1.5rem 0;
 }
 
+
 /* Main */
 main > section {
     padding: 2.5rem 0;
@@ -101,6 +110,7 @@ main > section:nth-child(even) {
 .column-txt {
     width: 40%;
 }
+
 
 /* Footer */
 footer {
