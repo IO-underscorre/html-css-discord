@@ -25,6 +25,34 @@
     max-width: 1250px;
 }
 
+/* Visual buttons for <a> and <button> */
+.button-visual-stnd , .button-visual-alt {
+    padding: 0.5em 1em;
+    border-radius: 2em;
+}
+
+.button-visual-stnd:hover , .button-visual-alt:hover {
+    box-shadow: 0 0.4em 0.8em #00000050;
+}
+
+.button-visual-stnd {
+    background-color: #ffffff;
+    color: #23272a;
+}
+
+.button-visual-stnd:hover {
+    color: #404eed;
+}
+
+.button-visual-alt {
+    background-color: #23272a;
+    color: #ffffff;
+}
+
+.button-visual-stnd:hover {
+    background-color: #42494e;
+}
+
 /* Header */
 header {
     background-color: #404eed;
