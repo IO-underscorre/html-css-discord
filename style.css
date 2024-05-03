@@ -20,7 +20,7 @@ a {
 /* Containers to align items inside a <section> or others macroelements horizontally */
 .container-narrow , .container-wide {
     margin: auto;
-    width: 95%;
+    width: 90%;
 }
 
 .container-narrow {
@@ -70,23 +70,45 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+
+    color: #ffffff;
 }
 
-/* Navigation bar on header */
+/* Navigation bar on top */
 .sticky-header > nav {
-    min-height: 4rem;
+    min-height: 5rem;
 }
 
 .sticky-header > nav > div {
     width: 20%;
 }
 
-/* Text link on navigation bar */
-.sticky-header > nav > ul {
+/* Logo */
+.sticky-header > nav img {
+    height: 2.5rem;
+    padding-top: 0.25rem;
+}
+
+/* Central part of the navigation bar */
+.sticky-header ul {
     width: 60%;
     
     list-style: none;
     justify-content: center;
+}
+
+.sticky-header ul > li {
+    padding: 0.5rem 1.5rem;
+}
+
+.sticky-header ul > li:hover {
+    text-decoration: underline;
+    
+}
+
+/* Auth button */
+.sticky-header > nav > div:last-child {
+    text-align: right;
 }
 
 .not-sticky-header {
