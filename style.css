@@ -153,7 +153,7 @@ header {
 
 /* Main */
 main > section {
-    padding: 2.5rem 0;
+    padding: 6rem 0;
 }
 
 main > section:nth-child(even) {
@@ -162,10 +162,60 @@ main > section:nth-child(even) {
 
 .column-img {
     width: 60%;
+    padding: 3rem;
+}
+
+main .container-wide img {
+    width: 100%;
 }
 
 .column-txt {
     width: 40%;
+    padding: 3rem;
+}
+
+main .container-wide h2 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+main .container-wide p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+main .container-wide:not(.container-flex) {
+    padding: 3rem;
+
+    text-align: center;
+}
+
+.download-now-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.download-now-box img {
+    width: 100%;
+}
+
+.download-now-box h3 {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    width: 100%;
+}
+
+.download-now-box + a {
+    font-size: 1.25rem;
 }
 
 
