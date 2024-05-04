@@ -37,31 +37,36 @@ a {
 }
 
 /* Visual buttons for <a> and <button> */
-.button-visual-stnd , .button-visual-alt {
+[class^="button-visual"] {
     padding: 0.75em 1em;
     border-radius: 2em;
 }
 
-.button-visual-stnd:hover , .button-visual-alt:hover {
+[class^="button-visual"]:hover {
     box-shadow: 0 0.4em 0.8em #00000050;
 }
 
-.button-visual-stnd {
+.button-visual-white {
     background-color: #ffffff;
     color: #23272a;
 }
 
-.button-visual-stnd:hover {
+.button-visual-white:hover {
     color: #2a5ee8;
 }
 
-.button-visual-alt {
+.button-visual-grey {
     background-color: #23272a;
     color: #ffffff;
 }
 
-.button-visual-alt:hover {
+.button-visual-grey:hover {
     background-color: #42494e;
+}
+
+.button-visual-blue {
+    background-color: #2a5ee8;
+    color: #ffffff;
 }
 
 
