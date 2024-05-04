@@ -15,10 +15,18 @@ a {
     text-decoration: inherit;
 }
 
+ul {
+    list-style: none;
+}
+
 .container-flex {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+}
+
+.container-flex.nav-bar {
     justify-content: space-between;
 }
 
@@ -69,6 +77,10 @@ a {
     color: #ffffff;
 }
 
+.button-visual-blue:hover {
+    background-color: #4777fc;
+}
+
 
 /* Header */
 header {
@@ -86,49 +98,47 @@ header {
     position: sticky;
     top: 1rem;
     
+    font-size: 1rem;
     font-weight: 600;
 }
 
 /* Navigation bar on top */
-.sticky-header > nav {
+header .nav-bar {
     background-color: #2a5ee8;
     border-radius: 1rem;
     padding: 0 1rem;
     min-height: 4rem;
 }
 
-.sticky-header > nav > div {
+header .nav-bar > div {
     width: 15%;
 }
 
 /* Logo */
-.sticky-header > nav img {
+.sticky-header img {
     height: 2.5rem;
     padding-top: 0.25rem;
 }
 
 /* Central part of the navigation bar */
-.sticky-header ul {
+#sub-nav-bar-top {
     width: 68%;
-    
-    list-style: none;
-    justify-content: center;
-    font-size: 1rem;
 }
 
-.sticky-header ul > li {
-    padding: 0.5rem 1.5rem;
+#sub-nav-bar-top li {
+    padding: 0.75rem 1.5rem;
 }
 
-.sticky-header ul > li:hover {
+#sub-nav-bar-top a:hover {
     text-decoration: underline;
 }
 
 /* Auth button */
-.sticky-header > nav > div:last-child {
+#sub-nav-bar-top + div {
     text-align: right;
 }
 
+/* Title of the page */
 .not-sticky-header {
     padding: 7rem 0 10rem;
     
@@ -148,7 +158,7 @@ header {
 
 .not-sticky-header a {
     display: inline-block;
-    margin: 0 0.75rem;
+    margin: 0 0.75rem 0.5rem;
 }
 
 /* Main */
@@ -160,9 +170,14 @@ main > section:nth-child(even) {
     background-color: #f6f6f6;
 }
 
+main .container-wide.container-flex {
+    padding: 1.5rem 0;
+}
+
 .column-img {
-    width: 60%;
-    padding: 3rem;
+    min-width: 33rem;
+    flex-basis: 60%;
+    padding: 1.5rem 3rem;
 }
 
 main .container-wide img {
@@ -170,8 +185,9 @@ main .container-wide img {
 }
 
 .column-txt {
-    width: 40%;
-    padding: 3rem;
+    min-width: 22rem;
+    flex-basis: 40%;
+    padding: 1.5rem 3rem;
 }
 
 main .container-wide h2 {
