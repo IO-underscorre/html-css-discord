@@ -1,0 +1,113 @@
+/* Everywhere */
+.container-flex-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Header */
+header {
+    background-image: url(images/background/jumbo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+header , header .nav-bar {
+    background-color: #2b5de9;
+}
+
+/* Jumbo of the page */
+.not-sticky-header {
+    text-align: center;
+}
+
+.not-sticky-header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.not-sticky-header p {
+    padding: 2.5rem 0;
+    line-height: 2;
+}
+
+.not-sticky-header a {
+    margin: 0 0.75rem 0.5rem;
+}
+
+
+/* Main */
+main > section {
+    padding: 6rem 0;
+}
+
+main > section:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+main .container-wide.container-flex-center {
+    padding: 1.5rem 0;
+}
+
+.column-img {
+    min-width: 33rem;
+    flex-basis: 60%;
+    padding: 1.5rem 3rem;
+}
+
+main .container-wide img {
+    width: 100%;
+}
+
+.column-txt {
+    min-width: 22rem;
+    flex-basis: 40%;
+    padding: 1.5rem 3rem;
+}
+
+main .container-wide h2 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+main .container-wide p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+main .container-wide:not(.container-flex-center) {
+    padding: 3rem;
+
+    text-align: center;
+}
+
+.download-now-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.download-now-box img {
+    width: 100%;
+}
+
+.download-now-box h3 {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    width: 100%;
+}
+
+.download-now-box + a {
+    font-size: 1.25rem;
+}

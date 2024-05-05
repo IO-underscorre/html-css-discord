@@ -19,15 +19,18 @@ ul {
     list-style: none;
 }
 
-.container-flex {
+.nav-bar {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
-.container-flex.nav-bar {
-    justify-content: space-between;
+.header-main-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Containers to align items inside a <section> or others macroelements horizontally */
@@ -46,6 +49,7 @@ ul {
 
 /* Visual buttons for <a> and <button> */
 [class^="button-visual"] {
+    display: inline-block;
     padding: 0.75em 1em;
     border-radius: 2em;
 }
@@ -84,13 +88,7 @@ ul {
 
 /* Header */
 header {
-    background-image: url(images/background/jumbo.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
-    background-color: #2a5ee8;
-
-    color: #ffffff;
+   color: #ffffff;
 }
 
 .sticky-header {
@@ -104,7 +102,6 @@ header {
 
 /* Navigation bar on top */
 header .nav-bar {
-    background-color: #2a5ee8;
     border-radius: 1rem;
     padding: 0 1rem;
     min-height: 4rem;
@@ -123,6 +120,8 @@ header .nav-bar > div {
 /* Central part of the navigation bar */
 #sub-nav-bar-top {
     width: 68%;
+    
+    align-items: center;
 }
 
 #sub-nav-bar-top li {
@@ -138,99 +137,10 @@ header .nav-bar > div {
     text-align: right;
 }
 
-/* Title of the page */
+/* Jumbo of the page */
 .not-sticky-header {
     padding: 7rem 0 10rem;
     
-    text-align: center;
-    font-size: 1.25rem;
-}
-
-.not-sticky-header h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-}
-
-.not-sticky-header p {
-    padding: 2.5rem 0;
-    line-height: 2;
-}
-
-.not-sticky-header a {
-    display: inline-block;
-    margin: 0 0.75rem 0.5rem;
-}
-
-/* Main */
-main > section {
-    padding: 6rem 0;
-}
-
-main > section:nth-child(even) {
-    background-color: #f6f6f6;
-}
-
-main .container-wide.container-flex {
-    padding: 1.5rem 0;
-}
-
-.column-img {
-    min-width: 33rem;
-    flex-basis: 60%;
-    padding: 1.5rem 3rem;
-}
-
-main .container-wide img {
-    width: 100%;
-}
-
-.column-txt {
-    min-width: 22rem;
-    flex-basis: 40%;
-    padding: 1.5rem 3rem;
-}
-
-main .container-wide h2 {
-    margin-bottom: 1.5rem;
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 3rem;
-}
-
-main .container-wide p {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-
-main .container-wide:not(.container-flex) {
-    padding: 3rem;
-
-    text-align: center;
-}
-
-.download-now-box {
-    position: relative;
-    width: 100%;
-    margin-bottom: 2rem;
-
-    font-size: 2rem;
-    font-weight: 800;
-    text-align: center;
-}
-
-.download-now-box img {
-    width: 100%;
-}
-
-.download-now-box h3 {
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -70%);
-    width: 100%;
-}
-
-.download-now-box + a {
     font-size: 1.25rem;
 }
 
@@ -244,7 +154,10 @@ footer {
     font-size: 1rem;
 }
 
-footer .container-flex {
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -277,11 +190,11 @@ footer .container-flex {
     font-size: 1.5rem;
 }
 
-#footer-main-nav > div.container-flex {
+#footer-main-nav > .footer-flex {
     flex-basis: calc(2*(100%/3));
 }
 
-#footer-main-nav > div.container-flex > div.container-flex {
+#footer-main-nav > .footer-flex > .footer-flex {
     flex-basis: 50%;
 }
 
