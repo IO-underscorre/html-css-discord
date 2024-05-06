@@ -50,7 +50,8 @@ main > .container-wide {
     border-radius: 1rem;
     padding: 3.5rem;
     flex-basis: calc(50% - 1rem);
-    margin: 0.5rem 0;
+    min-width: 23rem;
+    margin-top: 9rem;
     font-size: 1.25rem;
 
     overflow: hidden;
@@ -84,7 +85,6 @@ main > .container-wide {
 }
 
 .special {
-    min-width: 23rem;
 
     display: flex;
     flex-flow: column nowrap;
