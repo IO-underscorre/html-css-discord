@@ -51,6 +51,7 @@ main > section:first-of-type {
 .wave {
     height: 100%;
     width: 100%;
+    background-image: url(images/background/wave.svg);
 }
 
 main > section:nth-of-type(even) {
