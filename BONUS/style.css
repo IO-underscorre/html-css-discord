@@ -29,6 +29,14 @@ table , tbody , tfoot , thead , tr , th , td {
     background: transparent;
 }
 
+details > summary {
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
 .nav-bar {
     display: flex;
     flex-wrap: wrap;
