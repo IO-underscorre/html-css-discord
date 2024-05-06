@@ -37,18 +37,23 @@ details > summary::-webkit-details-marker {
     display: none;
 }
 
-.header-main-container {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-around;
-    align-items: center;
+.anchor {
+    position: relative;
 }
 
+/* Flex containers often used */
 .nav-bar {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 /* Containers to align items inside a <section> or others macroelements horizontally */
@@ -71,6 +76,7 @@ details > summary::-webkit-details-marker {
     display: inline-block;
     padding: 0.75em 1em;
     border-radius: 2em;
+    line-height: 1.25;
 }
 
 [class^="button-visual"]:hover {
@@ -164,6 +170,22 @@ header .nav-bar > div {
     padding: 7rem 0 10rem;
     
     font-size: 1.25rem;
+}
+
+.header-main-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.not-sticky-header h1 {
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.header-img img {
+    width: 100%;
 }
 
 

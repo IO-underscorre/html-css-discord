@@ -1,11 +1,4 @@
 /* Everywhere */
-.container-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
 .info-box {
     background-color: #f6f6f6;
     border-radius: 0.5rem;
@@ -41,11 +34,6 @@ header , header .nav-bar {
     max-width: 20.5rem;
 }
 
-.not-sticky-header h1 {
-    font-size: 3.25rem;
-    font-weight: 700;
-}
-
 .not-sticky-header p {
     padding-top: 1.5rem;
     line-height: 1.25;
@@ -54,14 +42,6 @@ header , header .nav-bar {
 .header-img {
     width: 55%;
     min-width: 14.5rem;
-}
-
-.header-img img {
-    width: 100%;
-}
-
-.anchor {
-    position: relative;
 }
 
 /* NITRO cards */
