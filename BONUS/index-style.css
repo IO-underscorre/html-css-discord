@@ -40,12 +40,37 @@ header , header .nav-bar {
 
 
 /* Main */
-main > section {
-    padding: 6rem 0;
+main > section:first-of-type {
+    padding-top: 3rem;
 }
 
-main > section:nth-child(even) {
+.wave-background {
+    height: 8rem;
+}
+
+.wave {
+    height: 100%;
+    width: 100%;
+}
+
+main > section:nth-of-type(even) {
     background-color: #f6f6f6;
+}
+
+main > section:nth-of-type(even) .wave-background {
+    background-color: #ffffff;;
+}
+
+main > section:nth-of-type(even) .wave {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2257%) hue-rotate(226deg) brightness(116%) contrast(93%);
+}
+
+main > section:nth-of-type(odd) .wave-background {
+    background-color: #f6f6f6;;
+}
+
+main > section:nth-of-type(odd) .wave {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(90%) saturate(9%) hue-rotate(17deg) brightness(108%) contrast(100%);
 }
 
 main .container-wide.container-flex-center {
