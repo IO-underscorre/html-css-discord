@@ -23,7 +23,6 @@
 /* Header */
 header {
     background-image: linear-gradient(0deg, #db85f4 0%, #8887f5 80%);
-    margin-bottom: 24rem;
 }
 
 header , header .nav-bar {
@@ -123,6 +122,11 @@ header .container-cards {
 
 
 /* Main */
+/* Transparent cards to make up fot the space taken by NITRO cards in main */
+.card-ghost {
+    min-height: 18rem;
+}
+
 main section {
     margin-top: 5rem;
 }
@@ -291,8 +295,10 @@ div.info-box:not(.card) {
 
 .subscribe-banner h2 {
     color: #ffffff;
+    margin-top: 2rem;
 }
 
 .subscribe-banner a {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
